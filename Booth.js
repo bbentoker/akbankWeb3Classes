@@ -5,7 +5,7 @@ export class Booth {
 
     report = []
 
-    gate(vehicle) {
+    pass(vehicle) {
         const type = vehicle.constructor.name
         const date = new Date()
         

@@ -10,15 +10,13 @@ const bus = new Bus(2,"Hakan","Akkaş",400);
 const booth = new Booth();
 
 
-booth.gate(car);
+booth.pass(car);
 
-setTimeout(()=> null,2000);
-
-booth.gate(bus);
+booth.pass(bus);
 
 const administration = new Administration();
 
 administration.addBooth(booth);
 
-console.log(administration.report());
-console.log(administration.getDailyEarnings());
+let report = administration.report();
+let earnings = administration.getDailyEarnings();
