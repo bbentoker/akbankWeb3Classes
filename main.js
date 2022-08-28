@@ -11,10 +11,14 @@ const booth = new Booth();
 
 
 booth.gate(car);
+
+setTimeout(()=> null,2000);
+
 booth.gate(bus);
 
 const administration = new Administration();
 
 administration.addBooth(booth);
 
+console.log(administration.report());
 console.log(administration.getDailyEarnings());
